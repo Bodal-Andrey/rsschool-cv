@@ -13,6 +13,7 @@
     I am focused on personal professional development, ready to multitask.
     In addition, I have the skills to conduct successful negotiations, interaction with related departments.
     Ready for an unpaid internship and probationary period.
+
 # My skills
     HTML5/CSS3, BEM, Sass, Gulp, JavaScript, React, Redux.
 
@@ -35,8 +36,7 @@ const isPalindrom = (line) => {
     [GitHub](https://github.com/Bodal-Andrey)
 
 # Education
-    __WIUT__
-    Perm National Research Polytechnic University
+    **Perm National Research Polytechnic University**
 
 # English
     A2 - Pre-Intermediate
