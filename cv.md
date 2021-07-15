@@ -36,7 +36,7 @@ const isPalindrom = (line) => {
     [GitHub](https://github.com/Bodal-Andrey)
 
 # Education
-    **Perm National Research Polytechnic University**
+    __Perm National Research Polytechnic University__
 
 # English
     A2 - Pre-Intermediate
