@@ -1,0 +1,48 @@
+body {
+    min-width: 1200px;
+    font-family: "STIX Two Math", Times, sans-serif;
+    font-style: normal;
+    font-weight: 400;  
+    font-size: 16px;
+    line-height: 23px;
+    color: #000;
+    background-color: #2f4466;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
