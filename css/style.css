@@ -6,15 +6,14 @@ body {
     font-size: 16px;
     line-height: 23px;
     color: #000;
-    background-color: #2f4466;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e5e5e5;
 }
 
 a {
     text-decoration: none;
-}
-
-ul {
-    list-style: none;
 }
 
 img {
@@ -42,7 +41,65 @@ html {
     box-sizing: inherit;
 }
 
+ul {
+    list-style-type: square;
+    padding: 15px;
+    margin: 0;
+}
+
 .container {
-    width: 1200px;
+    width: 1200px;; 
     margin: 0 auto;
+    background-color: #fff;
+}
+
+.aside {
+    width: 300px;
+    color: #fff;
+    background-color: #6b6966;
+}
+
+.aside-skills,
+.aside-contacts {
+    padding-left: 30px;
+    border-top: 1px solid #fff;
+}
+
+.aside-avatar {
+    border-radius: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-grow: 1;
+}
+
+main {
+    flex-grow: 1;
+    padding-left: 150px;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-info__title,
+.main-code__title,
+.main-work__title,
+.main-education__title,
+.main-lang__title {
+    background-color: #e5e5e5;
+}
+
+.contacts-list__link,
+.git-link {
+    color: #fff;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 0;
+    background-color: #6b6966;
 }
