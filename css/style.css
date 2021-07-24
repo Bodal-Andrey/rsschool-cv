@@ -5,7 +5,7 @@ body {
     font-weight: 400;  
     font-size: 16px;
     line-height: 23px;
-    color: #000;
+    color: #444240;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,19 +19,6 @@ a {
 img {
     max-width: 100%;
     height: auto;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-
-    border: 0;
-
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 
 html {
@@ -66,6 +53,7 @@ ul {
 }
 
 .aside-avatar {
+    margin-left: 45px;
     border-radius: 100%;
 }
 
@@ -82,6 +70,13 @@ main {
 .main-title {
     display: flex;
     flex-direction: column;
+    margin-left: 150px;
+    font-size: 50px;
+}
+
+.main-text {
+    margin-left: 75px;
+    font-size: 40px;
 }
 
 .main-info__title,
@@ -89,7 +84,12 @@ main {
 .main-work__title,
 .main-education__title,
 .main-lang__title {
+    padding-left: 150px;
     background-color: #e5e5e5;
+}
+
+.main-code figure {
+    margin-left: 70px;
 }
 
 .contacts-list__link,
@@ -99,7 +99,22 @@ main {
 
 .main-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-shrink: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: #6b6966;
+}
+
+.main-footer__year {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.git-link {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #fff;
 }
