@@ -1,13 +1,13 @@
 body {
-    min-width: 1200px;
+    max-width: 1024px;
+    min-width: 320px;
+    margin: 0 auto;
     font-family: "STIX Two Math", Times, sans-serif;
     font-style: normal;
     font-weight: 400;  
     font-size: 16px;
     line-height: 23px;
     color: #444240;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     background-color: #e5e5e5;
 }
@@ -24,9 +24,9 @@ img {
 html {
     box-sizing: border-box;
 }
-* {
+/* * {
     box-sizing: inherit;
-}
+} */
 
 ul {
     list-style-type: square;
@@ -35,13 +35,14 @@ ul {
 }
 
 .container {
-    width: 1200px;; 
+    min-width: 320px;; 
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
 }
 
 .aside {
-    width: 300px;
     color: #fff;
     background-color: #6b6966;
 }
@@ -52,8 +53,7 @@ ul {
     border-top: 1px solid #fff;
 }
 
-.aside-avatar {
-    margin-left: 45px;
+.aside-photo__avatar {
     border-radius: 100%;
 }
 
@@ -63,20 +63,21 @@ ul {
 }
 
 main {
-    flex-grow: 1;
-    padding-left: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: hidden;
 }
 
 .main-title {
-    display: flex;
-    flex-direction: column;
-    margin-left: 150px;
     font-size: 50px;
+    text-align: center;
+    line-height: 1;
 }
 
 .main-text {
-    margin-left: 75px;
     font-size: 40px;
+    text-align: center;
+    line-height: 1;
 }
 
 .main-info__title,
@@ -84,7 +85,6 @@ main {
 .main-work__title,
 .main-education__title,
 .main-lang__title {
-    padding-left: 150px;
     background-color: #e5e5e5;
 }
 
