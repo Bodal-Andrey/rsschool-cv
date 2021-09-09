@@ -1,0 +1,120 @@
+body {
+    max-width: 1024px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-family: "STIX Two Math", Times, sans-serif;
+    font-style: normal;
+    font-weight: 400;  
+    font-size: 16px;
+    line-height: 23px;
+    color: #444240;
+    min-height: 100vh;
+    background-color: #e5e5e5;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    box-sizing: border-box;
+}
+/* * {
+    box-sizing: inherit;
+} */
+
+ul {
+    list-style-type: square;
+    padding: 15px;
+    margin: 0;
+}
+
+.container {
+    min-width: 320px;; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.aside {
+    color: #fff;
+    background-color: #6b6966;
+}
+
+.aside-skills,
+.aside-contacts {
+    padding-left: 30px;
+    border-top: 1px solid #fff;
+}
+
+.aside-photo__avatar {
+    border-radius: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-grow: 1;
+}
+
+main {
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: hidden;
+}
+
+.main-title {
+    font-size: 50px;
+    text-align: center;
+    line-height: 1;
+}
+
+.main-text {
+    font-size: 40px;
+    text-align: center;
+    line-height: 1;
+}
+
+.main-info__title,
+.main-code__title,
+.main-work__title,
+.main-education__title,
+.main-lang__title {
+    background-color: #e5e5e5;
+}
+
+.main-code figure {
+    margin-left: 70px;
+}
+
+.contacts-list__link,
+.git-link {
+    color: #fff;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #6b6966;
+}
+
+.main-footer__year {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.git-link {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #fff;
+}
