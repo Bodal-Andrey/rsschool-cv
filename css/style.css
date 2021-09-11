@@ -2,6 +2,7 @@ body {
     max-width: 1024px;
     min-width: 320px;
     margin: 0 auto;
+    padding: 30px;
     font-family: "STIX Two Math", Times, sans-serif;
     font-style: normal;
     font-weight: 400;  
@@ -23,10 +24,8 @@ img {
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-/* * {
-    box-sizing: inherit;
-} */
 
 ul {
     list-style-type: square;
@@ -40,6 +39,33 @@ ul {
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    box-shadow: 1px 81px 100px 5px rgba(0,0,0,0.49);
+}
+
+.main-header {
+    width: 100%;
+    min-height: 50px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+    list-style: none;
+    overflow: hidden;
+    background-color: #6b6966;
+}
+
+@media (max-width: 500px) {
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.nav-list a {
+    color: #fff;
 }
 
 .aside {
@@ -48,13 +74,24 @@ ul {
 }
 
 .aside-skills,
-.aside-contacts {
+.aside-contacts,
+.aside-works {
     padding-left: 30px;
     border-top: 1px solid #fff;
 }
 
+.aside-works {
+    margin-bottom: 50px;
+}
+
+.aside-contacts a:hover,
+.aside-works a:hover {
+    color: black;
+}
+
 .aside-photo__avatar {
     border-radius: 100%;
+    box-shadow: 5px 6px 32px 1px rgba(0,0,0,0.49);
 }
 
 .content-wrapper {
@@ -69,13 +106,13 @@ main {
 }
 
 .main-title {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     line-height: 1;
 }
 
 .main-text {
-    font-size: 40px;
+    font-size: 15px;
     text-align: center;
     line-height: 1;
 }
@@ -85,14 +122,26 @@ main {
 .main-work__title,
 .main-education__title,
 .main-lang__title {
-    background-color: #e5e5e5;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
 }
 
-.main-code figure {
-    margin-left: 70px;
+.main-info,
+.main-work,
+.main-education,
+.main-lang {
+    margin-top: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .contacts-list__link,
+.works-list__link,
 .git-link {
     color: #fff;
 }
